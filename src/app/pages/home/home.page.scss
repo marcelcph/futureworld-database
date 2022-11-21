@@ -1,0 +1,83 @@
+.scroll{ 
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+/*#container {
+  text-align: center;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#container strong {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+#container p {
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #8c8c8c;
+
+  margin: 0;
+}
+
+#container a {
+  text-decoration: none;
+}*/
+
+@import 'swiper/scss';
+@import 'swiper/scss/navigation';
+@import 'swiper/scss/pagination';
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-container{
+  margin-left: 40px;
+}
+
+.swiper-button-prev {
+  color: #000; 
+  /*background-color: #264347; 
+  border-radius: 900px;
+  border-width: 60px;
+  border-color: #264347; */
+}
+
+.swiper-button-next {
+  color: #000; 
+  /*background-color: #264347; 
+  border-radius: 200px;
+  border-width: 60px;
+  border-color: #264347;*/
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #fff !important;
+}
+
+.swiper-pagination-bullet{
+  background-color: rgb(255, 255, 255);
+}
+
+@media screen and (min-width: 320px) {
+  .swiper-container{
+    margin-left: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .swiper-container{
+    margin-left: 110px;
+  }
+}

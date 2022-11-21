@@ -1,0 +1,256 @@
+.scroll{ 
+    height: 100vh;
+    overflow-y: scroll;
+  }
+  
+  /*#container {
+    text-align: center;
+  
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  #container strong {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  
+  #container p {
+    font-size: 16px;
+    line-height: 22px;
+  
+    color: #8c8c8c;
+  
+    margin: 0;
+  }
+  
+  #container a {
+    text-decoration: none;
+  }*/
+  .background-hero{
+    background: linear-gradient(transparent 50%, #264347 40%) no-repeat;
+    bottom: 0;
+}
+  
+  @import 'swiper/scss';
+    @import 'swiper/scss/navigation';
+    @import 'swiper/scss/pagination';
+    
+    .swiper-slide img {
+      display: block;
+      width: 80%;
+      height: 100%;
+      object-fit: cover;
+    }
+    
+    .swiper-container{
+      margin-left: 40px;
+    }
+    
+    .swiper-button-prev {
+      color: #000; 
+      /*background-color: #264347; 
+      border-radius: 900px;
+      border-width: 60px;
+      border-color: #264347; */
+    }
+    
+    .swiper-button-next {
+      color: #000; 
+      /*background-color: #264347; 
+      border-radius: 200px;
+      border-width: 60px;
+      border-color: #264347;*/
+    }
+    
+    .swiper-pagination-bullet-active {
+      background-color: #fff !important;
+    }
+    
+    .swiper-pagination-bullet{
+      background-color: rgb(255, 255, 255);
+    }
+    
+    @media screen and (min-width: 320px) {
+      .swiper-container{
+        margin-left: 60px;
+      }
+    }
+    
+    @media screen and (min-width: 768px) {
+      .swiper-container{
+        margin-left: 110px;
+      }
+    }
+
+    @media screen and (min-width: 1440px) {
+      .swiper-container{
+        margin-left: 40px;
+      }
+    }
+
+    @media screen and (min-width: 2560px) {
+      .swiper-container{
+        margin-left: 0px;
+      }
+    }
+  
+    .card-container {
+      position: relative;
+      color: #fff;
+  
+    }
+  
+    .Poverty {
+      position: absolute;
+      top: 58%;
+      left: 8%;
+    }
+  
+    .Poverty-p {
+      position: absolute;
+      top: 70%;
+      left: 8%;
+    }
+  
+    @media screen and (min-width: 320px) {
+      .Poverty {
+          position: absolute;
+          top: 0%;
+          left: 8%;
+        }
+      
+        .Poverty-p {
+          position: absolute;
+          top: 12%;
+          left: 8%;
+          font-size: 10px;
+        }
+        .swiper-slide img {
+          width: 100%;
+        }
+  
+        .swiper-pagination-bullet{
+          display: none;
+        }
+    }
+  
+    @media screen and (min-width: 375px) {
+      .Poverty {
+          position: absolute;
+          top: 10%;
+          left: 8%;
+        }
+      
+        .Poverty-p {
+          position: absolute;
+          top: 20%;
+          left: 8%;
+          font-size: 12px;
+        }
+        .swiper-slide img {
+          width: 100%;
+        }
+    }
+  
+    @media screen and (min-width: 425px) {
+      .Poverty {
+          position: absolute;
+          top: 10%;
+          left: 8%;
+        }
+      
+        .Poverty-p {
+          position: absolute;
+          top: 20%;
+          left: 8%;
+          font-size: 14px;
+        }
+        .swiper-slide img {
+          width: 100%;
+        }
+  
+    }
+  
+    @media screen and (min-width: 768px) {
+      .Poverty {
+        position: absolute;
+        top: 10%;
+        left: 8%;
+      }
+    
+      .Poverty-p {
+        position: absolute;
+        top: 20%;
+        left: 8%;
+        font-size: 12px;
+      }
+      .swiper-slide img {
+        width: 100%;
+      }
+  
+        .swiper-pagination-bullet{
+          display: inline-block;
+        }
+    }
+  
+    @media screen and (min-width: 1024px) {
+      .Poverty {
+          position: absolute;
+          top: 10%;
+          left: 8%;
+        }
+      
+        .Poverty-p {
+          position: absolute;
+          top: 20%;
+          left: 8%;
+          font-size: 16px;
+        }
+        .swiper-slide img {
+          width: 100%;
+        }
+  
+    }
+
+    @media screen and (min-width: 1440px) {
+      .Poverty {
+          position: absolute;
+          top: 10%;
+          left: 8%;
+        }
+      
+        .Poverty-p {
+          position: absolute;
+          top: 20%;
+          left: 8%;
+          font-size: 22px;
+        }
+        .swiper-slide img {
+          width: 100%;
+        }
+  
+    }
+
+  
+    @media screen and (min-width: 2560px) {
+      .Poverty {
+          position: absolute;
+          top: 20%;
+          left: 8%;
+        }
+      
+        .Poverty-p {
+          position: absolute;
+          top: 35%;
+          left: 8%;
+          font-size: 20px;
+        }
+        .swiper-slide img {
+          width: 100%;
+        }
+  
+    }

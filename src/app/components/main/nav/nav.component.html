@@ -1,0 +1,165 @@
+<div
+  class="max-w-8xl mx-auto ml-5 mr-5 sm:ml-16 sm:mr-16 md:ml-20 md:mr-20 pt-10"
+>
+  <header>
+    <nav
+      class="flex flex-wrap items-center justify-between w-full py-4 md:py-0 px-4 text-primary-fw font-medium"
+    >
+      <div>
+        <a class="text-primary-fw cursor-pointer" href="/">
+          <ion-label class="cursor-pointer py-2 text-2xl md:text-lg mednav:text-3xl md-lg:text-2xl lg:text-lg font-semibold"
+            >/Future<span class="font-light">World</span>
+          </ion-label>
+        </a>
+      </div>
+      <div id="main-content" class="burgernav:hidden block">
+        <ion-menu-toggle>
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              id="menu-button"
+              class="h-6 w-6 cursor-pointer burgernav:hidden block"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </div>
+        </ion-menu-toggle>
+      </div>
+
+      <div class="hidden w-full burgernav:flex md:items-center md:w-auto" id="menu">
+        <ul
+          class="pt-4 text-sm navchange:text-sm md:text-md mednav:text-2xl lg:text-xl font-base text-primary-fw flex justify-between md:pt-0"
+        >
+          <li>
+            <a class="text-primary-fw cursor-pointer" href="/">
+              <ion-label
+                class="md:p-4 py-2 mx-3 block cursor-pointer transition duration-300 group transform hover:-translate-y-1 rounded-xl font-base"
+                >Home</ion-label
+              >
+            </a>
+          </li>
+          <li>
+            <a class="text-primary-fw cursor-pointer" href="/about">
+              <ion-label
+                class="md:p-4 py-2 mx-3 block cursor-pointer transition duration-300 group transform hover:-translate-y-1 rounded-xl font-base"
+                >About us</ion-label
+              >
+            </a>
+          </li>
+          <li>
+            <a class="text-primary-fw cursor-pointer" href="/home#sdg">
+              <ion-label
+                class="md:p-4 py-2 mx-3 block cursor-pointer transition duration-300 group transform hover:-translate-y-1 rounded-xl font-base"
+                >Goals</ion-label
+              >
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+
+      <div class="hidden w-full burgernav:flex md:items-center md:w-auto" id="menu">
+        <ul
+          class="pt-4 text-2xl font-base text-primary-fw flex justify-between md:pt-0"
+        >
+        
+          <li>
+            <a class="md:p-2 py-0 mx-3 block cursor-pointer text-primary-fw" href="/about"
+              >
+              <button class="button-contact" role="button">Questions</button>
+              <!-- <ion-button class="text-white" color="primary"
+                >Contact</ion-button
+              > -->
+              </a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+</div>
+
+<ion-menu contentId="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-menu-toggle>
+        <ion-button>          
+          <ion-icon name="close-outline"></ion-icon>
+        </ion-button>
+        <ion-title><strong>/Future</strong>World</ion-title>    
+      </ion-menu-toggle>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+<ion-list-header>
+  <ion-label><strong>Goals</strong></ion-label>
+</ion-list-header>
+    <ion-list>
+
+      <a href="/poverty">
+        <ion-item>
+          <ion-label>
+            No poverty
+          </ion-label>
+        </ion-item>
+        </a>
+
+        <a href="/work-and-economic-growth">
+        <ion-item>
+          <ion-label>
+            Decent work and economic growth          
+          </ion-label>
+        </ion-item>
+        </a>
+
+        <a href="/reduced-inequalities">
+        <ion-item>
+          <ion-label>
+            Reduced inequalities
+          </ion-label>
+        </ion-item>
+        </a>
+
+        <a href="/consumption-and-production">
+        <ion-item>
+          <ion-label>
+            Responsible consumption and production
+          </ion-label>
+        </ion-item>
+        </a>
+
+
+        <ion-list>
+        <ion-list-header>
+          <ion-label><strong>More</strong></ion-label>
+        </ion-list-header>     
+        
+        <a href="/about">
+        <ion-item>
+          <ion-label>
+            About us
+          </ion-label>
+        </ion-item>
+      </a>
+
+      <a href="/about#faq">
+        <ion-item>
+          <ion-label>
+            Contact us
+          </ion-label>
+        </ion-item>
+      </a>
+      </ion-list>
+
+    </ion-list>
+  </ion-content>
+</ion-menu>

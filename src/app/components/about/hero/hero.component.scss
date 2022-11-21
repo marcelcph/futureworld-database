@@ -1,0 +1,12 @@
+  .maximum-hero-height{
+    max-height: 1050px;
+}
+
+#background-hero {
+    background: url("/assets/img/aboutus-hero.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 92vh;
+    max-height: 550px;
+    min-height: 500px;
+  }

@@ -1,0 +1,37 @@
+<div>
+  <div id="container" class="mt-28 text-center mb-20 ">
+    <div id="parentb"></div>
+
+
+    <!-- <img class="video-cursor-preview" src="./assets/img/video-img.png" cursor-active cursor-opacity="0">  -->
+
+    <!-- <div class="container-video">
+    <video class="video-cursor-preview"  controls>
+      <source src="./assets/video/FutureWorld-intro-home.mp4" type="video/mp4">
+      <source src="./assets/video/FutureWorld-intro-home.mp4" type="video/ogg">
+    Your browser does not support the video tag.
+    </video>
+  </div> -->
+
+    <!-- <div class="">
+          <a (click)="fullscreen(video);">
+    <video #video class="">
+      <source class="" src="./assets/video/FutureWorld-intro-home.mp4" type="video/mp4">
+      <img src="./assets/img/video-img.png" title="Your browser does not support the <video> tag">
+       </video></a>
+     </div>
+ -->
+ <div class="max-w-8xl 3xl:ml-10 3xl:mr-10">
+ <a (click)="fullscreen(video);" class="hidden md:block">
+ <div class="video video-cursor-preview" cursor-active cursor-opacity="0">
+  <video #video  class="w-full object-none" id="max-height-video">
+    <source src="./assets/video/FutureWorld-intro-home.mp4" type="video/mp4">
+    <source src="./assets/video/FutureWorld-intro-home.mp4" type="video/ogg">
+  Browser not supported
+</video>
+</div> 
+</a>
+<video class="md:hidden -mt-10 md:mt-0" loop controls="true" width='100%' height='100%' src='./assets/video/FutureWorld-intro-home.mp4' type='video/mp4'></video>
+</div></div></div>
+
+

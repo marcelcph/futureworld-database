@@ -1,0 +1,98 @@
+<div class="scroll"><app-nav></app-nav>
+<app-hero [hero]="herodata"></app-hero>
+<div class="background-hero">
+  <div class="max-w-7xl mx-auto">
+    <img src="./assets/img/poverty-hero.webp" class="text-center mt-20" />
+  </div>
+</div>
+<app-subhero [subhero]="subherodata"></app-subhero>
+<app-default-text [primarytext]="primarytextdata"></app-default-text>
+<app-video [imageone]="imageonedata"></app-video>
+<app-text-slider></app-text-slider>
+<app-default-list-with-text [primarylist]="primarylistdata"></app-default-list-with-text>
+<div class="max-w-7xl mx-auto text-primary-fw mb-20">
+  <p
+      class="text-primary-fw text-3xl md:text-5xl 3xl:text-7xl max-w-6xl pt-5 sm:pt-20 md:pt-20 !leading-tight ml-16 mr-16 md:ml-28 md:mr-28 1xl:ml-10 1xl:mr-0 3xl:ml-0 3xl:mr-0 mb-10"
+    >
+    <span class="font-semibold">All of </span>our Sustainable <br> Development <span class="font-semibold">goals</span>
+    </p>
+<swiper [config]="swiperConfig" class="swiper-container"
+    [slidesPerView]="3"
+    [spaceBetween]="50"
+    (swiper)="onSwiper($event)"
+    (slideChange)="onSlideChange()"
+    [navigation]="true"
+    [pagination]="{ clickable: true }"
+    [scrollbar]="{ draggable: true }"
+  >
+    <ng-template swiperSlide>
+      <div class="card-container">
+          <img src="./assets/img/povertySlider/Group20.webp"/>
+          <div class="card">
+          <p class="Poverty xxxsm:text-xl semixsm:text-2xl lg:text-3xl xl:text-5xl 3xl:text-5xl mt-2">1.1</p>
+          <p class="Poverty-p xxxsm:text-md xxxsm:w-10/12 lg:text-md xl:text-lg 3xl:text-2xl mt-3 w-8/12">By 2030, eradicate extreme poverty for all people everywhere, currently measured as people living on less than $1.25 a day</p>
+      </div>
+</div>
+  </ng-template>
+    <ng-template swiperSlide>
+      <div class="card-container">
+          <img src="./assets/img/povertySlider/Group16.webp"/>
+          <div class="card">
+          <p class="Poverty xxxsm:text-xl semixsm:text-2xl lg:text-3xl xl:text-5xl 3xl:text-5xl mt-2">1.2</p>
+          <p class="Poverty-p xxxsm:text-md xxxsm:w-10/12 lg:text-md xl:text-lg 3xl:text-2xl mt-3 w-8/12">By 2030, reduce at least by half the proportion of men, women and children of all ages living in poverty in all its dimensions according to national definitions</p>
+          </div>
+      </div>
+    </ng-template>
+    <ng-template swiperSlide>
+      <div class="card-container">
+          <img src="./assets/img/povertySlider/Group15.webp"/>
+          <div class="card">
+          <p class="Poverty xxxsm:text-xl semixsm:text-2xl lg:text-3xl xl:text-5xl 3xl:text-5xl mt-2">1.3</p>
+          <p class="Poverty-p xxxsm:text-md xxxsm:w-10/12 lg:text-md xl:text-lg 3xl:text-2xl mt-3 w-8/12">Implement nationally appropriate social protection systems and measures for all, including floors, and by 2030 achieve substantial coverage of the poor and the vulnerable</p>
+          </div>
+      </div>
+      
+    </ng-template>
+    <ng-template swiperSlide>
+      <div class="card-container">
+          <img src="./assets/img/povertySlider/Group14.webp"/>
+          <div class="card">
+          <p class="Poverty xxxsm:text-xl semixsm:text-2xl lg:text-3xl xl:text-5xl 3xl:text-5xl mt-2">1.4</p>
+          <p class="Poverty-p xxxsm:text-md xxxsm:w-10/12 lg:text-md xl:text-lg 3xl:text-2xl mt-3 w-8/12">By 2030, ensure that all men and women, in particular the poor and the vulnerable, have equal rights to economic resources, as well as access to basic services, ownership and control over land and other forms of property, inheritance, natural resources, appropriate new technology and financial services, including microfinance</p>
+          </div>
+      </div>
+    </ng-template>
+    <ng-template swiperSlide>
+      <div class="card-container">
+          <img src="./assets/img/povertySlider/Group13.webp"/>
+          <div class="card">
+          <p class="Poverty xxxsm:text-xl semixsm:text-2xl lg:text-2xl xl:text-5xl 3xl:text-5xl mt-2">1.5</p>
+          <p class="Poverty-p xxxsm:text-md xxxsm:w-10/12 lg:text-md xl:text-lg 3xl:text-2xl mt-3 w-8/12">By 2030, build the resilience of the poor and those in vulnerable situations and reduce their exposure and vulnerability to climate-related extreme events and other economic, social and environmental shocks and disasters</p>
+          </div>
+      </div>
+    </ng-template>
+    <ng-template swiperSlide>
+      <div class="card-container">
+          <img src="./assets/img/povertySlider/Group12.webp"/>
+          <div class="card">
+          <p class="Poverty xxxsm:text-xl semixsm:text-2xl lg:text-3xl xl:text-5xl 3xl:text-5xl mt-2">1.a</p>
+          <p class="Poverty-p xxxsm:text-md xxxsm:w-10/12 lg:text-md xl:text-lg 3xl:text-2xl mt-3 w-8/12">Ensure significant mobilization of resources from a variety of sources, including through enhanced development cooperation, in order to provide adequate and predictable means for developing countries, in particular least developed countries, to implement programmes and policies to end poverty in all its dimensions</p>
+          </div>
+      </div>
+    </ng-template>
+    <ng-template swiperSlide>
+      <div class="card-container">
+          <img src="./assets/img/povertySlider/Group11.webp"/>
+          <div class="card">
+          <p class="Poverty xxxsm:text-xl semixsm:text-2xl lg:text-3xl xl:text-5xl 3xl:text-5xl mt-2">1.b</p>
+          <p class="Poverty-p xxxsm:text-md xxxsm:w-10/12 lg:text-md xl:text-lg 3xl:text-2xl mt-3 w-8/12">Create sound policy frameworks at the national, regional and international levels, based on pro-poor and gender-sensitive development strategies, to support accelerated investment in poverty eradication actions</p>
+          </div>
+      </div>
+    </ng-template>
+  </swiper>
+</div>
+<app-image [image]="imagedata"></app-image>
+<app-quote [quote]="quotedata"></app-quote>
+<app-next-project [nextproject]="nextprojectdata"></app-next-project>
+<app-secondary-footer></app-secondary-footer>
+</div>

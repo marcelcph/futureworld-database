@@ -1,0 +1,132 @@
+<div class="scroll"><app-nav></app-nav>
+  <app-hero [hero]="herodata"></app-hero>
+  <div class="background-hero">
+    <div class="max-w-7xl mx-auto">
+      <img src="./assets/img/inequality-image.webp" class="text-center mt-20" />
+    </div>
+  </div>
+  <app-subhero [subhero]="subherodata"></app-subhero>
+  <app-default-text [primarytext]="primarytextdata"></app-default-text>
+  <app-video [imageone]="imageonedata"></app-video>
+  <div class="overflow-hidden text-center">
+    <p class="lg:text-8xl md:text-6xl sm:text-4xl text-3xl whitespace-nowrap font text-primary-fw -ml-16">
+      Capitalism - Inequality - Investing - Income - Growth - Consumption - Industry - Capitalism - Inequality - Investing - Income - Growth - Consumption - Industry - Capitalism - Inequality - Investing - Income - Growth - Consumption - Industry - Capitalism - Inequality - Investing - Income - Growth - Consumption - Industry - 
+    </p>
+    <p class="lg:text-8xl md:text-6xl sm:text-4xl text-3xl whitespace-nowrap font text-primary-fw -ml-96">
+      Income - Growth - Consumption - Capitalism - Inequality - Industry - Income - Capitalism - Inequality - Investing - Income - Growth - Consumption - Industry - Capitalism - Inequality - Investing - Income - Growth - Consumption - Industry - Capitalism - Inequality - Investing - Income - Growth - Consumption - Industry - 
+    </p>
+  </div>
+  <app-small-bullet-point-section [smalllist]="smalllistdata"></app-small-bullet-point-section>
+  <div class="max-w-7xl mx-auto text-primary-fw mb-20">
+    <p
+        class="text-primary-fw text-3xl md:text-5xl 3xl:text-7xl max-w-6xl pt-5 sm:pt-20 md:pt-20 !leading-tight ml-16 mr-16 md:ml-28 md:mr-28 1xl:ml-10 1xl:mr-0 3xl:ml-0 3xl:mr-0 mb-10"
+      >
+      <span class="font-semibold">All of </span>our Sustainable <br> Development <span class="font-semibold">goals</span>
+      </p>
+  <swiper [config]="swiperConfig" class="swiper-container"
+      [slidesPerView]="3"
+      [spaceBetween]="50"
+      (swiper)="onSwiper($event)"
+      (slideChange)="onSlideChange()"
+      [navigation]="true"
+      [pagination]="{ clickable: true }"
+      [scrollbar]="{ draggable: true }"
+    >
+      <ng-template swiperSlide>
+        <div class="card-container">
+            <img src="./assets/img/inequalitySlider/slider-inequality-1.webp"/>
+            <div class="card">
+            <p class="Poverty xxxsm:text-xl semixsm:text-2xl lg:text-3xl xl:text-5xl 3xl:text-5xl mt-2">10.1</p>
+            <p class="Poverty-p xxxsm:text-md xxxsm:w-10/12 lg:text-md xl:text-lg 3xl:text-2xl mt-3 w-8/12">By 2030, progressively achieve and sustain income growth of the bottom 40 per cent of the population at a rate higher than the national average
+            </p>
+        </div>
+  </div>
+    </ng-template>
+      <ng-template swiperSlide>
+        <div class="card-container">
+          <img src="./assets/img/inequalitySlider/slider-inequality-2.webp"/>
+            <div class="card">
+            <p class="Poverty xxxsm:text-xl semixsm:text-2xl lg:text-3xl xl:text-5xl 3xl:text-5xl mt-2">10.2</p>
+            <p class="Poverty-p xxxsm:text-md xxxsm:w-10/12 lg:text-md xl:text-lg 3xl:text-2xl mt-3 w-8/12">By 2030, empower and promote the social, economic and political inclusion of all, irrespective of age, sex, disability, race, ethnicity, origin, religion or economic or other status
+            </p>
+            </div>
+        </div>
+      </ng-template>
+      <ng-template swiperSlide>
+        <div class="card-container">
+          <img src="./assets/img/inequalitySlider/slider-inequality-3.webp"/>
+            <div class="card">
+            <p class="Poverty xxxsm:text-xl semixsm:text-2xl lg:text-3xl xl:text-5xl 3xl:text-5xl mt-2">10.3</p>
+            <p class="Poverty-p xxxsm:text-md xxxsm:w-10/12 lg:text-md xl:text-lg 3xl:text-2xl mt-3 w-8/12">Ensure equal opportunity and reduce inequalities of outcome, including by eliminating discriminatory laws, policies and practices and promoting appropriate legislation, policies and action in this regard
+            </p>
+            </div>
+        </div>
+        
+      </ng-template>
+      <ng-template swiperSlide>
+        <div class="card-container">
+          <img src="./assets/img/inequalitySlider/slider-inequality-4.webp"/>
+            <div class="card">
+            <p class="Poverty xxxsm:text-xl semixsm:text-2xl lg:text-3xl xl:text-5xl 3xl:text-5xl mt-2">10.4</p>
+            <p class="Poverty-p xxxsm:text-md xxxsm:w-10/12 lg:text-md xl:text-lg 3xl:text-2xl mt-3 w-8/12">Adopt policies, especially fiscal, wage and social protection policies, and progressively achieve greater equality
+            </p>
+            </div>
+        </div>
+      </ng-template>
+      <ng-template swiperSlide>
+        <div class="card-container">
+          <img src="./assets/img/inequalitySlider/slider-inequality-5.webp"/>
+            <div class="card">
+            <p class="Poverty xxxsm:text-xl semixsm:text-2xl lg:text-2xl xl:text-5xl 3xl:text-5xl mt-2">10.5</p>
+            <p class="Poverty-p xxxsm:text-md xxxsm:w-10/12 lg:text-md xl:text-lg 3xl:text-2xl mt-3 w-8/12">Improve the regulation and monitoring of global financial markets and institutions and strengthen the implementation of such regulations
+            </p>
+            </div>
+        </div>
+      </ng-template>
+      <ng-template swiperSlide>
+        <div class="card-container">
+          <img src="./assets/img/inequalitySlider/slider-inequality-6.webp"/>
+            <div class="card">
+            <p class="Poverty xxxsm:text-xl semixsm:text-2xl lg:text-3xl xl:text-5xl 3xl:text-5xl mt-2">10.6</p>
+            <p class="Poverty-p xxxsm:text-md xxxsm:w-10/12 lg:text-md xl:text-lg 3xl:text-2xl mt-3 w-8/12">Ensure enhanced representation and voice for developing countries in decision-making in global international economic and financial institutions in order to deliver more effective, credible, accountable and legitimate institutions
+            </p>
+            </div>
+        </div>
+      </ng-template>
+      <ng-template swiperSlide>
+        <div class="card-container">
+          <img src="./assets/img/inequalitySlider/slider-inequality-7.webp"/>
+            <div class="card">
+            <p class="Poverty xxxsm:text-xl semixsm:text-2xl lg:text-3xl xl:text-5xl 3xl:text-5xl mt-2">10.7</p>
+            <p class="Poverty-p xxxsm:text-md xxxsm:w-10/12 lg:text-md xl:text-lg 3xl:text-2xl mt-3 w-8/12">Facilitate orderly, safe, regular and responsible migration and mobility of people, including through the implementation of planned and well-managed migration policies
+            </p>
+            </div>
+        </div>
+      </ng-template>
+      <ng-template swiperSlide>
+        <div class="card-container">
+          <img src="./assets/img/inequalitySlider/slider-inequality-8.webp"/>
+            <div class="card">
+            <p class="Poverty xxxsm:text-xl semixsm:text-2xl lg:text-3xl xl:text-5xl 3xl:text-5xl mt-2">10.a</p>
+            <p class="Poverty-p xxxsm:text-md xxxsm:w-10/12 lg:text-md xl:text-lg 3xl:text-2xl mt-3 w-8/12">Implement the principle of special and differential treatment for developing countries, in particular least developed countries, in accordance with World Trade Organization agreements
+            </p>
+            </div>
+        </div>
+      </ng-template>
+      <ng-template swiperSlide>
+        <div class="card-container">
+          <img src="./assets/img/inequalitySlider/slider-inequality-9.webp"/>
+            <div class="card">
+            <p class="Poverty xxxsm:text-xl semixsm:text-2xl lg:text-3xl xl:text-5xl 3xl:text-5xl mt-2">10.b</p>
+            <p class="Poverty-p xxxsm:text-md xxxsm:w-10/12 lg:text-md xl:text-lg 3xl:text-2xl mt-3 w-8/12">Encourage official development assistance and financial flows, including foreign direct investment, to States where the need is greatest, in particular least developed countries, African countries, small island developing States and landlocked developing countries, in accordance with their national plans and programmes
+            </p>
+            </div>
+        </div>
+      </ng-template>
+    </swiper>
+  </div>
+  <app-image [image]="imagedata"></app-image>
+  <app-quote [quote]="quotedata"></app-quote>
+  <app-next-project [nextproject]="nextprojectdata"></app-next-project>
+  <app-secondary-footer></app-secondary-footer>
+  </div>

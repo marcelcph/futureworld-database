@@ -1,0 +1,31 @@
+#container{
+    position: relative;
+    display:flex;
+    flex-direction: column;
+  }
+  
+#parentbeta {
+    display:block;
+  position: absolute;
+    content:url(https://raw.githubusercontent.com/lucasjolibois54/futureworld/main/src/assets/img/empty-image.webp);
+    width: 100%;
+  object-fit: cover;
+  z-index: -3;
+}
+
+.video-cursor-preview  {
+  cursor: 250 25;
+  cursor: url('/assets/icon/cursor6.png'),
+   auto;
+}
+
+.container-video {
+  width: 100%;
+    overflow:hidden;
+    display:block;
+    height: 500px;
+}
+
+#max-height-video{
+  max-height: 40rem;
+}

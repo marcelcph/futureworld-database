@@ -1,0 +1,151 @@
+<div class="scroll"><app-nav></app-nav>
+  <app-hero [hero]="herodata"></app-hero>
+  <div class="background-hero">
+    <div class="max-w-7xl mx-auto">
+      <img src="./assets/img/hero-header-production.webp" class="text-center mt-20" />
+    </div>
+  </div>
+  <app-subhero [subhero]="subherodata"></app-subhero>
+  <app-default-text [primarytext]="primarytextdata"></app-default-text>
+  <app-video [imageone]="imageonedata"></app-video>
+  <div class="overflow-hidden text-center">
+    <p class="lg:text-8xl md:text-6xl sm:text-4xl text-3xl whitespace-nowrap font text-primary-fw -ml-16">
+      Sustainable - Consumption - Climate - Biodiversity - Sustainable - Consumption - Climate - Biodiversity - Sustainable - Consumption - Climate - Biodiversity - Sustainable - Consumption - Climate - Biodiversity - Sustainable - Consumption - Climate - Biodiversity - Sustainable - Consumption - Climate - Biodiversity - 
+    </p>
+    <p class="lg:text-8xl md:text-6xl sm:text-4xl text-3xl whitespace-nowrap font text-primary-fw -ml-96">
+      Climate - Biodiversity - Sustainable - Consumption - Sustainable - Consumption - Climate - Biodiversity - Sustainable - Consumption - Climate - Biodiversity - Sustainable - Consumption - Climate - Biodiversity - Sustainable - Consumption - Climate - Biodiversity - Sustainable - Consumption - Climate - Biodiversity - 
+    </p>
+  </div>
+  <app-bullet-points-on-two-sections-default [secondarylist]="secondarylistdata"></app-bullet-points-on-two-sections-default>
+  <div class="max-w-7xl mx-auto text-primary-fw mb-20">
+    <p
+        class="text-primary-fw text-3xl md:text-5xl 3xl:text-7xl max-w-6xl pt-5 sm:pt-20 md:pt-20 !leading-tight ml-16 mr-16 md:ml-28 md:mr-28 1xl:ml-10 1xl:mr-0 3xl:ml-0 3xl:mr-0 mb-10"
+      >
+      <span class="font-semibold">All of </span>our Sustainable <br> Development <span class="font-semibold">goals</span>
+      </p>
+  <swiper [config]="swiperConfig" class="swiper-container"
+      [slidesPerView]="3"
+      [spaceBetween]="50"
+      (swiper)="onSwiper($event)"
+      (slideChange)="onSlideChange()"
+      [navigation]="true"
+      [pagination]="{ clickable: true }"
+      [scrollbar]="{ draggable: true }"
+    >
+      <ng-template swiperSlide>
+        <div class="card-container">
+            <img src="./assets/img/povertySlider/test-opacity.webp"/>
+            <div class="card">
+            <p class="Poverty xxxsm:text-xl semixsm:text-2xl lg:text-3xl xl:text-5xl 3xl:text-5xl mt-2">12.1</p>
+            <p class="Poverty-p xxxsm:text-md xxxsm:w-10/12 lg:text-md xl:text-lg 3xl:text-2xl mt-3 w-8/12">Implement the 10-Year Framework of Programmes on Sustainable Consumption and Production Patterns, all countries taking action, with developed countries taking the lead, taking into account the development and capabilities of developing countries
+            </p>
+        </div>
+  </div>
+    </ng-template>
+      <ng-template swiperSlide>
+        <div class="card-container">
+            <img src="./assets/img/povertySlider/test-opacity.webp"/>
+            <div class="card">
+            <p class="Poverty xxxsm:text-xl semixsm:text-2xl lg:text-3xl xl:text-5xl 3xl:text-5xl mt-2">12.2</p>
+            <p class="Poverty-p xxxsm:text-md xxxsm:w-10/12 lg:text-md xl:text-lg 3xl:text-2xl mt-3 w-8/12">By 2030, reduce at least by half the proportion of men, women and children of all ages living in poverty in all its dimensions according to national definitions</p>
+            </div>
+        </div>
+      </ng-template>
+      <ng-template swiperSlide>
+        <div class="card-container">
+            <img src="./assets/img/povertySlider/test-opacity.webp"/>
+            <div class="card">
+            <p class="Poverty xxxsm:text-xl semixsm:text-2xl lg:text-3xl xl:text-5xl 3xl:text-5xl mt-2">12.3</p>
+            <p class="Poverty-p xxxsm:text-md xxxsm:w-10/12 lg:text-md xl:text-lg 3xl:text-2xl mt-3 w-8/12">By 2030, halve per capita global food waste at the retail and consumer levels and reduce food losses along production and supply chains, including post-harvest losses
+            </p>
+            </div>
+        </div>
+        
+      </ng-template>
+      <ng-template swiperSlide>
+        <div class="card-container">
+            <img src="./assets/img/povertySlider/test-opacity.webp"/>
+            <div class="card">
+            <p class="Poverty xxxsm:text-xl semixsm:text-2xl lg:text-3xl xl:text-5xl 3xl:text-5xl mt-2">12.4</p>
+            <p class="Poverty-p xxxsm:text-md xxxsm:w-10/12 lg:text-md xl:text-lg 3xl:text-2xl mt-3 w-8/12">By 2020, achieve the environmentally sound management of chemicals and all wastes throughout their life cycle, in accordance with agreed international frameworks, and significantly reduce their release to air, water and soil in order to minimize their adverse impacts on human health and the environment
+            </p>
+            </div>
+        </div>
+      </ng-template>
+      <ng-template swiperSlide>
+        <div class="card-container">
+            <img src="./assets/img/povertySlider/test-opacity.webp"/>
+            <div class="card">
+            <p class="Poverty xxxsm:text-xl semixsm:text-2xl lg:text-2xl xl:text-5xl 3xl:text-5xl mt-2">12.5</p>
+            <p class="Poverty-p xxxsm:text-md xxxsm:w-10/12 lg:text-md xl:text-lg 3xl:text-2xl mt-3 w-8/12">By 2030, substantially reduce waste generation through prevention, reduction, recycling and reuse
+            </p>
+            </div>
+        </div>
+      </ng-template>
+      <ng-template swiperSlide>
+        <div class="card-container">
+            <img src="./assets/img/povertySlider/test-opacity.webp"/>
+            <div class="card">
+            <p class="Poverty xxxsm:text-xl semixsm:text-2xl lg:text-3xl xl:text-5xl 3xl:text-5xl mt-2">12.6</p>
+            <p class="Poverty-p xxxsm:text-md xxxsm:w-10/12 lg:text-md xl:text-lg 3xl:text-2xl mt-3 w-8/12">Encourage companies, especially large and transnational companies, to adopt sustainable practices and to integrate sustainability information into their reporting cycle
+            </p>
+            </div>
+        </div>
+      </ng-template>
+      <ng-template swiperSlide>
+        <div class="card-container">
+            <img src="./assets/img/povertySlider/test-opacity.webp"/>
+            <div class="card">
+            <p class="Poverty xxxsm:text-xl semixsm:text-2xl lg:text-3xl xl:text-5xl 3xl:text-5xl mt-2">12.7</p>
+            <p class="Poverty-p xxxsm:text-md xxxsm:w-10/12 lg:text-md xl:text-lg 3xl:text-2xl mt-3 w-8/12">Promote public procurement practices that are sustainable, in accordance with national policies and priorities
+            </p>
+            </div>
+        </div>
+      </ng-template>
+      <ng-template swiperSlide>
+        <div class="card-container">
+            <img src="./assets/img/povertySlider/test-opacity.webp"/>
+            <div class="card">
+            <p class="Poverty xxxsm:text-xl semixsm:text-2xl lg:text-3xl xl:text-5xl 3xl:text-5xl mt-2">12.8</p>
+            <p class="Poverty-p xxxsm:text-md xxxsm:w-10/12 lg:text-md xl:text-lg 3xl:text-2xl mt-3 w-8/12">By 2030, ensure that people everywhere have the relevant information and awareness for sustainable development and lifestyles in harmony with nature
+            </p>
+            </div>
+        </div>
+      </ng-template>
+      <ng-template swiperSlide>
+        <div class="card-container">
+            <img src="./assets/img/povertySlider/test-opacity.webp"/>
+            <div class="card">
+            <p class="Poverty xxxsm:text-xl semixsm:text-2xl lg:text-3xl xl:text-5xl 3xl:text-5xl mt-2">12.a</p>
+            <p class="Poverty-p xxxsm:text-md xxxsm:w-10/12 lg:text-md xl:text-lg 3xl:text-2xl mt-3 w-8/12">Support developing countries to strengthen their scientific and technological capacity to move towards more sustainable patterns of consumption and production
+            </p>
+            </div>
+        </div>
+      </ng-template>
+      <ng-template swiperSlide>
+        <div class="card-container">
+            <img src="./assets/img/povertySlider/test-opacity.webp"/>
+            <div class="card">
+            <p class="Poverty xxxsm:text-xl semixsm:text-2xl lg:text-3xl xl:text-5xl 3xl:text-5xl mt-2">12.b</p>
+            <p class="Poverty-p xxxsm:text-md xxxsm:w-10/12 lg:text-md xl:text-lg 3xl:text-2xl mt-3 w-8/12">Develop and implement tools to monitor sustainable development impacts for sustainable tourism that creates jobs and promotes local culture and products
+            </p>
+            </div>
+        </div>
+      </ng-template>
+      <ng-template swiperSlide>
+        <div class="card-container">
+            <img src="./assets/img/povertySlider/test-opacity.webp"/>
+            <div class="card">
+            <p class="Poverty xxxsm:text-xl semixsm:text-2xl lg:text-3xl xl:text-5xl 3xl:text-5xl mt-2">12.b</p>
+            <p class="Poverty-p xxxsm:text-md xxxsm:w-10/12 lg:text-md xl:text-lg 3xl:text-2xl mt-3 w-8/12">Rationalize inefficient fossil-fuel subsidies that encourage wasteful consumption by removing market distortions, in accordance with national circumstances, including by restructuring taxation and phasing out those harmful subsidies, where they exist, to reflect their environmental impacts, taking fully into account the specific needs and conditions of developing countries and minimizing the possible adverse impacts on their development in a manner that protects the poor and the affected communities
+            </p>
+            </div>
+        </div>
+      </ng-template>
+    </swiper>
+  </div>
+  <app-image [image]="imagedata"></app-image>
+  <app-quote [quote]="quotedata"></app-quote>
+  <app-next-project [nextproject]="nextprojectdata"></app-next-project>
+  <app-secondary-footer></app-secondary-footer>
+  </div>

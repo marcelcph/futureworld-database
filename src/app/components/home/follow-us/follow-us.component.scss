@@ -1,0 +1,207 @@
+
+section {
+	display:flex;
+	flex-flow:column;
+	align-items:center;
+	div.container {
+		transition:all .3s ease;
+		h1 { margin:15px 0 0 0; }
+		h3 { margin:0 0 25px 0; }
+	}
+	@media (max-width:992px) { padding:0 20px 0 20px; }
+}
+section.slide-option {
+	margin:0 0 50px 0;
+	.no-marg { margin:0 0 0 0; }
+}
+
+div.element-slider {
+	display:flex;
+	justify-content:center;
+	width:100%;
+	height:100%;
+	div.element-barrier {
+		overflow:hidden;
+		position:relative;
+	}
+	ul.all-elements {
+		display:flex;
+		height:100%;
+		li.single-element {
+			flex:1;
+			display:flex;
+			justify-content:center;
+			align-items:center;
+			background:#EFEDE6;
+			color:#343434;
+		}
+	}
+}
+
+@keyframes translatestf {
+	0% { transform:translateX(100%);  }
+	100% { transform:translateX(-500%);  }
+}
+#stffull div.element-barrier {
+	ul.all-elements {
+		width:500%;
+		li.single-element {
+			animation:translatestf 30s linear infinite;
+			h4 { font-size:28px; }
+		}
+	}
+}
+
+@keyframes translateinfinite {
+	100% { transform:translateX(calc(-100px * 12));  }
+}
+#infinite div.element-barrier {
+	background:#EFEDE6;
+	/*box-shadow:0 3px 10px -3px rgba(0,0,0,0.3);*/
+	&::before,
+	&::after {
+		content: " ";
+		position:absolute;
+		z-index:9;
+		width:180px;
+		height:150%;	
+	}
+	&::before {
+		top:0;left:0;
+		background: linear-gradient(to right, rgba(239, 237, 230, 1) 0%, rgba(255,255,255,0) 100%);
+	}
+	&::after {
+		top:0;right:0;
+		background: linear-gradient(to left, rgba(239, 237, 230, 1) 0%, rgba(255,255,255,0) 100%);
+	}
+	ul.all-elements {
+		width:calc(450px * 24);
+		li.single-element {
+			animation:translateinfinite 25s linear infinite;
+		}
+	}
+}
+
+@media screen and (min-width: 320px) {
+	#infinite div.element-barrier {
+		&::before,
+		&::after {
+			content: " ";
+			position:absolute;
+			z-index:9;
+			width:180px;
+			height:150%;	
+		}
+		&::before {
+			top:0;left:0;
+			background: linear-gradient(to right, rgba(239, 237, 230, 1) 0%, rgba(255,255,255,0) 0%);
+		}
+		&::after {
+			top:0;right:0;
+			background: linear-gradient(to left, rgba(239, 237, 230, 1) 0%, rgba(255,255,255,0) 0%);
+		}
+		ul.all-elements {
+			width:calc(150px * 24);
+			li.single-element {
+				animation:translateinfinite 25s linear infinite;
+			}
+		}
+	}
+  }
+
+  @media screen and (min-width: 375px) {
+    
+  }
+
+  @media screen and (min-width: 425px) {
+    
+
+  }
+
+  @media screen and (min-width: 768px) {
+	#infinite div.element-barrier {
+		&::before,
+		&::after {
+			content: " ";
+			position:absolute;
+			z-index:9;
+			width:180px;
+			height:150%;	
+		}
+		&::before {
+			top:0;left:0;
+			background: linear-gradient(to right, rgba(239, 237, 230, 1) 0%, rgba(255,255,255,0) 0%);
+		}
+		&::after {
+			top:0;right:0;
+			background: linear-gradient(to left, rgba(239, 237, 230, 1) 0%, rgba(255,255,255,0) 0%);
+		}
+		ul.all-elements {
+			width:calc(250px * 24);
+			li.single-element {
+				animation:translateinfinite 25s linear infinite;
+			}
+		}
+	}
+      
+  }
+
+  @media screen and (min-width: 1024px) {
+    #infinite div.element-barrier {
+		&::before,
+		&::after {
+			content: " ";
+			position:absolute;
+			z-index:9;
+			width:180px;
+			height:150%;	
+		}
+		&::before {
+			top:0;left:0;
+			background: linear-gradient(to right, rgba(239, 237, 230, 1) 0%, rgba(255,255,255,0) 100%);
+		}
+		&::after {
+			top:0;right:0;
+			background: linear-gradient(to left, rgba(239, 237, 230, 1) 0%, rgba(255,255,255,0) 100%);
+		}
+		ul.all-elements {
+			width:calc(300px * 24);
+			li.single-element {
+				animation:translateinfinite 25s linear infinite;
+			}
+		}
+	}
+  }
+
+
+  @media screen and (min-width: 1440px) {
+    
+
+  }
+
+  @media screen and (min-width: 2560px) {
+    #infinite div.element-barrier {
+		&::before,
+		&::after {
+			content: " ";
+			position:absolute;
+			z-index:9;
+			width:180px;
+			height:150%;	
+		}
+		&::before {
+			top:0;left:0;
+			background: linear-gradient(to right, rgba(239, 237, 230, 1) 0%, rgba(255,255,255,0) 100%);
+		}
+		&::after {
+			top:0;right:0;
+			background: linear-gradient(to left, rgba(239, 237, 230, 1) 0%, rgba(255,255,255,0) 100%);
+		}
+		ul.all-elements {
+			width:calc(450px * 24);
+			li.single-element {
+				animation:translateinfinite 25s linear infinite;
+			}
+		}
+	}
+  }
