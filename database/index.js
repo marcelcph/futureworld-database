@@ -12,8 +12,13 @@ var db = mysql.createConnection({
   host: "localhost",
   user: "root",
   password: "",
-  database: "futureworld"
+  database: "futureworld",
+  port:3333
 });
+
+app.listen(3333,()=>{
+  console.log('lortet kører');
+})
 
 db.connect(function(err) {
   if (err) throw err;
