@@ -30,15 +30,15 @@ db.connect(function(err) {
     ['Sandy', 'Ocean blvd 2', 'Highway 71'],
     ['Betty', 'Green Grass 1', 'Highway 71'],
     ['Richard', 'Sky st 331', 'Highway 71'],
-    ['Susan', 'One way 98'], 'Highway 71',
+    ['Susan', 'One way 98', 'Highway 71',],
     ['Vicky', 'Yellow Garden 2', 'Highway 71'],
-    ['Ben', 'Park Lane 38'], 'Highway 71',
+    ['Ben', 'Park Lane 38', 'Highway 71',],
     ['William', 'Central st 954', 'Highway 71'],
     ['Chuck', 'Main Road 989', 'Highway 71'],
     ['Viola', 'Sideway 1633', 'Highway 71']
   ];
 
-  var sql = "UPDATE fattigdom SET ide = 'dummydata';"
+  // var sql = "UPDATE fattigdom SET ide = 'dummydata';"
 
   //Execute the SQL statement, with the value array:
   db.query(sql, [values], function (err, result) {
