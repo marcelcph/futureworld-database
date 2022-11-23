@@ -13,11 +13,11 @@ app.use(bodyparser.json());
 // database connection
 
 const db = mysql.createConnection({
-        host:'localhost',
-        user: 'root',
-        password: '',
-        database: 'futureworlddb',
-        port: 3304
+        host:'remotemysql.com',
+        user: 'YV7hmbfNlq',
+        password: 'oW19e5ehHo',
+        database: 'YV7hmbfNlq',
+        port: 3306
 });
 
 // check database connection
