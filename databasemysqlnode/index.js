@@ -27,10 +27,10 @@ db.connect(err=>{
     console.log('database connected...');
 })
 
-app.get('/user', (req,res)=>{
-    console.log('get users');
+app.get('/article', (req,res)=>{
+    console.log('get articles');
 
-        let qr = 'select * from user';
+        let qr = 'select * from article';
 
         db.query(qr,(err,result)=>{
             if(err)
@@ -41,7 +41,7 @@ app.get('/user', (req,res)=>{
             if(result.length>0)
             {
                 res.send({
-                    message:'all user data',
+                    message:'all article data',
                     data:result
                 });
             }
@@ -49,9 +49,9 @@ app.get('/user', (req,res)=>{
 });
 
 // Get single data
-app.get('/user/:id',(req,res)=>{
+app.get('/article/:id',(req,res)=>{
     let gID = req.params.id;
-    let qr = `select * from user where id = ${gID}`;
+    let qr = `select * from article where id = ${gID}`;
 
     db.query(qr,(err,result)=>{
         if (err) {console.log(err);}
@@ -73,14 +73,19 @@ app.get('/user/:id',(req,res)=>{
 });
 
 // create data
-app.post('/user',(req,res)=>{
+app.post('/article',(req,res)=>{
     console.log(req.body,'createdata');
 
-    let fullName = req.body.fullname;
-    let eMail = req.body.email;
+    let title = req.body.title;
+    let imghero = req.body.imghero;
+    let resumetxt = req.body.resumetxt;
+    let subtitle = req.body.subtitle;
+    let content = req.body.content;
+    let imgcontent = req.body.imgcontent;
+    let quote = req.body.quote;
 
-    let qr = `insert into user(fullname,email)
-                values('${fullName}','${eMail}')`;
+    let qr = `insert into article(title,imghero,resumetxt,subtitle,content,imgcontent,quote)
+                values('${title}','${imghero}','${resumetxt}','${subtitle}','${content}','${imgcontent}','${quote}')`;
 
     db.query(qr,(err,result)=>{
         if(err){console.log(err);}
@@ -96,15 +101,20 @@ app.post('/user',(req,res)=>{
 });
 
 // Update single data
-app.put('/user/:id',(req,res)=>{
+app.put('/article/:id',(req,res)=>{
 
     console.log(req.body,'updatedata');
 
     let gID = req.params.id;
-    let fullName = req.body.fullname;
-    let eMail = req.body.email;
+    let title = req.body.title;
+    let imghero = req.body.imghero;
+    let resumetxt = req.body.resumetxt;
+    let subtitle = req.body.subtitle;
+    let content = req.body.content;
+    let imgcontent = req.body.imgcontent;
+    let quote = req.body.quote;
 
-    let qr = `update user set fullname = '${fullName}', email = '${eMail}'
+    let qr = `update article set title = '${title}', imghero = '${imghero}', resumetxt = '${resumetxt}', subtitle = '${subtitle}', content = '${content}', imgcontent = '${imgcontent}', quote = '${quote}' 
                where id = ${gID}`;
 
     db.query(qr,(err,result)=>{
@@ -117,10 +127,10 @@ app.put('/user/:id',(req,res)=>{
 })
 
 // Delete single data
-app.delete('/user/:id',(req,res)=>{
+app.delete('/article/:id',(req,res)=>{
     let qID = req.params.id;
 
-    let qr = `delete from user where id = '${qID}'`;
+    let qr = `delete from article where id = '${qID}'`;
     db.query(qr,(err,result)=>{
         if (err) {console.log(err);}
         res.send(
