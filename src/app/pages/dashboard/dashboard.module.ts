@@ -9,6 +9,7 @@ import { DashboardPageRoutingModule } from './dashboard-routing.module';
 import { DashboardPage } from './dashboard.page';
 
 import {HttpClientModule} from '@angular/common/http';
+import { ReadComponent } from './read/read.component';
 
 
 @NgModule({
@@ -19,6 +20,8 @@ import {HttpClientModule} from '@angular/common/http';
     DashboardPageRoutingModule,
     HttpClientModule,
   ],
-  declarations: [DashboardPage]
+  declarations: [DashboardPage,
+    ReadComponent,
+  ]
 })
 export class DashboardPageModule {}
