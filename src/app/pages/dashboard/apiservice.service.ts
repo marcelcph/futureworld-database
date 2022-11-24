@@ -11,7 +11,7 @@ export class ApiserviceService {
   constructor(private _http:HttpClient) { }
 
   // connect frontend to backend
-  apiUrl='http://localhost:3702/user/';
+  apiUrl='http://localhost:3702/article/';
 
   //Get all data
   getAllData():Observable<any>
