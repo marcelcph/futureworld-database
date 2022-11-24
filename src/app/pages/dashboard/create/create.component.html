@@ -2,12 +2,33 @@
   <form [formGroup]="userForm">
 
     <div>
-      <input type="text" class="form-control" formControlName="fullname" placeholder="Enter full name">
+      <input type="text" class="form-control" formControlName="title" placeholder="Enter title">
     </div>
     
     <div>
-      <input type="text" class="form-control" formControlName="email" placeholder="Enter email">
+      <input type="text" class="form-control" formControlName="imghero" placeholder="Enter imghero">
     </div>
+
+    <div>
+      <input type="text" class="form-control" formControlName="resumetxt" placeholder="Enter resumetxt">
+    </div>
+
+    <div>
+      <input type="text" class="form-control" formControlName="subtitle" placeholder="Enter subtitle">
+    </div>
+
+    <div>
+      <input type="text" class="form-control" formControlName="content" placeholder="Enter content">
+    </div>
+
+    <div>
+      <input type="text" class="form-control" formControlName="imgcontent" placeholder="Enter imgcontent">
+    </div>
+
+    <div>
+      <input type="text" class="form-control" formControlName="quote" placeholder="Enter quote">
+    </div>
+
     
     <div>
       <button *ngIf="!getparamid" (click)="userSubmit()">Create</button>
