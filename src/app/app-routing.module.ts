@@ -31,11 +31,15 @@ const routes: Routes = [
     path: 'work-and-economic-growth',
     loadChildren: () => import('./pages/goals/work-and-economic-growth/work-and-economic-growth.module').then( m => m.WorkAndEconomicGrowthPageModule)
   },
+  {
+    path: 'dashboard',
+    loadChildren: () => import('./pages/dashboard/dashboard.module').then( m => m.DashboardPageModule)
+  },
 ];
 
 @NgModule({
   imports: [
-    RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules })
+    RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules }),
   ],
   exports: [RouterModule]
 })

@@ -8,9 +8,13 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 
 import { NgxCursorModule } from 'ngx-cursor';
+import {HttpClient, HttpClientModule} from '@angular/common/http'
+import { CommonModule } from '@angular/common';
+
+
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, NgxCursorModule],
+  imports: [BrowserModule, CommonModule, IonicModule.forRoot(), AppRoutingModule, NgxCursorModule, HttpClientModule],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],
 })

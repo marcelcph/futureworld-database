@@ -1,0 +1,30 @@
+<div class="container">
+
+  <table class="border-separate border border-slate-500 ...">
+    <thead>
+      <tr>
+        <th class="border border-slate-600 ...">#</th>
+        <th class="border border-slate-600 ...">FullName</th>
+        <th class="border border-slate-600 ...">E-mail</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor = "let us of readData;">
+        <td class="border border-slate-700 ...">{{us.id}}</td>
+        <td class="border border-slate-700 ...">{{us.fullname}}</td>
+        <td class="border border-slate-700 ...">{{us.email}}</td>
+      </tr>
+      <tr>
+        <td class="border border-slate-700 ...">Ohio</td>
+        <td class="border border-slate-700 ...">Ohio</td>
+        <td class="border border-slate-700 ...">Columbus</td>
+      </tr>
+      <tr>
+        <td class="border border-slate-700 ...">Michigan</td>
+        <td class="border border-slate-700 ...">Ohio</td>
+        <td class="border border-slate-700 ...">Detroit</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
