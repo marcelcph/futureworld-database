@@ -5,10 +5,18 @@ import { DashboardPage } from './dashboard.page';
 import { CreateComponent } from './create/create.component';
 import { ReadComponent } from './read/read.component';
 
+import { AuthGuard } from '@auth0/auth0-angular';
+
 const routes: Routes = [
-  {path: '',component: DashboardPage},
+  {path: '',component: DashboardPage,
+
+  canActivate: [AuthGuard]
+
+
+},
   {path:'create',component:CreateComponent},
-  {path:'read',component:ReadComponent}
+  {path:'read',component:ReadComponent},
+
 ];
 
 @NgModule({
