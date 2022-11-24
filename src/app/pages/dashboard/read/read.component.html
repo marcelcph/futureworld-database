@@ -6,6 +6,7 @@
         <th class="border border-slate-600 ...">#</th>
         <th class="border border-slate-600 ...">FullName</th>
         <th class="border border-slate-600 ...">E-mail</th>
+        <th class="border border-slate-600 ...">Edit</th>
       </tr>
     </thead>
     <tbody>
@@ -13,16 +14,7 @@
         <td class="border border-slate-700 ...">{{us.id}}</td>
         <td class="border border-slate-700 ...">{{us.fullname}}</td>
         <td class="border border-slate-700 ...">{{us.email}}</td>
-      </tr>
-      <tr>
-        <td class="border border-slate-700 ...">Ohio</td>
-        <td class="border border-slate-700 ...">Ohio</td>
-        <td class="border border-slate-700 ...">Columbus</td>
-      </tr>
-      <tr>
-        <td class="border border-slate-700 ...">Michigan</td>
-        <td class="border border-slate-700 ...">Ohio</td>
-        <td class="border border-slate-700 ...">Detroit</td>
+        <td><ion-button class="" (click)="deleteID(us.id)">Delete</ion-button></td>
       </tr>
     </tbody>
   </table>
