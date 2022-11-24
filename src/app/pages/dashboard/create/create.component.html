@@ -1,3 +1,16 @@
-<p>
-  create works!
-</p>
+
+  <form [formGroup]="userForm" (ngSubmit)="userSubmit()">
+
+    <div>
+      <input type="text" class="form-control" formControlName="fullname" placeholder="Enter full name">
+    </div>
+    
+    <div>
+      <input type="text" class="form-control" formControlName="email" placeholder="Enter email">
+    </div>
+    
+    <div>
+      <button>Create</button>
+    </div>
+
+  </form>

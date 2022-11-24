@@ -10,6 +10,8 @@ import { DashboardPage } from './dashboard.page';
 
 import {HttpClientModule} from '@angular/common/http';
 import { ReadComponent } from './read/read.component';
+import { CreateComponent } from './create/create.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -19,9 +21,10 @@ import { ReadComponent } from './read/read.component';
     IonicModule,
     DashboardPageRoutingModule,
     HttpClientModule,
+    ReactiveFormsModule
   ],
   declarations: [DashboardPage,
-    ReadComponent,
+    ReadComponent, CreateComponent,
   ]
 })
 export class DashboardPageModule {}
