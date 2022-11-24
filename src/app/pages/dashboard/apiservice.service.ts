@@ -38,6 +38,6 @@ export class ApiserviceService {
   updateData(data:any,id:any):Observable<any>
   {
     let ids = id;
-    return this._http.put(`${this.apiUrl}/${ids}`,data);
+    return this._http.put(`${this.apiUrl}${ids}`,data);
   }
 }
