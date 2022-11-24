@@ -31,7 +31,7 @@ export class ApiserviceService {
   deleteData(id:any):Observable<any>
   {
     let ids = id;
-    return this._http.delete(`${this.apiUrl}${ids}`);
+    return this._http.delete(`${this.apiUrl}${ids}`); `` 
   }
 
   //update data
@@ -39,5 +39,12 @@ export class ApiserviceService {
   {
     let ids = id;
     return this._http.put(`${this.apiUrl}${ids}`,data);
+  }
+
+  //get single data
+  getSingleData(id:any):Observable<any>
+  {
+    let ids = id;
+    return this._http.get(`${this.apiUrl}${ids}`);
   }
 }

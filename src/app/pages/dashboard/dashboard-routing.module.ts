@@ -15,8 +15,8 @@ const routes: Routes = [
 
 },
   {path:'create',component:CreateComponent},
-  {path:'read',component:ReadComponent},
-
+  {path:'read/:id',component:CreateComponent},
+  {path:'read',component:ReadComponent}
 ];
 
 @NgModule({
