@@ -14,7 +14,9 @@
         <td class="border border-slate-700 ...">{{us.id}}</td>
         <td class="border border-slate-700 ...">{{us.fullname}}</td>
         <td class="border border-slate-700 ...">{{us.email}}</td>
-        <td><ion-button class="" (click)="deleteID(us.id)">Delete</ion-button></td>
+        <td><ion-button class="" (click)="deleteID(us.id)">Delete</ion-button>
+        <a [routerLink]="['../create']" >Update</a>
+        </td>
       </tr>
     </tbody>
   </table>
