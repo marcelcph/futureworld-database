@@ -23,17 +23,28 @@ errormsg:any;
       this.service.getSingleData(this.getparamid).subscribe((res)=>{
         console.log(res,'res==>');
         this.userForm.patchValue({
-          fullname:res.data[0].fullname,
-          email:res.data[0].email
+          title:res.data[0].title,
+          imghero:res.data[0].imghero,
+          resumetxt:res.data[0].resumetxt,
+          subtitle:res.data[0].subtitle,
+          content:res.data[0].content,
+          imgcontent:res.data[0].imgcontent,
+          quote:res.data[0].quote,
         })
       });
     }
   }
 
 userForm = new FormGroup({
-  'fullname':new FormControl('',Validators.required),
-  'email':new FormControl('',Validators.required)
+  'title':new FormControl('',Validators.required),
+  'imghero':new FormControl('',Validators.required),
+  'resumetxt':new FormControl('',Validators.required),
+  'subtitle':new FormControl('',Validators.required),
+  'content':new FormControl('',Validators.required),
+  'imgcontent':new FormControl('',Validators.required),
+  'quote':new FormControl('',Validators.required)
 });
+
 
 userSubmit()
 {
