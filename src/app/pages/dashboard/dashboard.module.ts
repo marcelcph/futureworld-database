@@ -13,6 +13,7 @@ import { ReadComponent } from './read/read.component';
 import { CreateComponent } from './create/create.component';
 import { ReactiveFormsModule } from '@angular/forms';
 
+import { LogoutLightComponent } from 'src/app/components/main/logout-light/logout-light.component';
 
 @NgModule({
   imports: [
@@ -25,6 +26,7 @@ import { ReactiveFormsModule } from '@angular/forms';
   ],
   declarations: [DashboardPage,
     ReadComponent, CreateComponent,
+    LogoutLightComponent
   ]
 })
 export class DashboardPageModule {}
