@@ -30,7 +30,7 @@ import { SecondaryFooterComponent } from 'src/app/components/main/secondary-foot
   ],
   declarations: [DashboardPage,
     ReadComponent, CreateComponent,TestComponent,
-    DarkNavComponent, NextProjectComponent, SecondaryFooterComponent
+    DarkNavComponent, NextProjectComponent, SecondaryFooterComponent, LogoutLightComponent
   ]
 })
 export class DashboardPageModule {}
