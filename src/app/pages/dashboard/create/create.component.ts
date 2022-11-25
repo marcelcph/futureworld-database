@@ -28,6 +28,8 @@ errormsg:any;
           resumetxt:res.data[0].resumetxt,
           subtitle:res.data[0].subtitle,
           content:res.data[0].content,
+          content1:res.data[0].content1,
+          content2:res.data[0].content2,
           imgcontent:res.data[0].imgcontent,
           quote:res.data[0].quote,
         })
@@ -41,6 +43,8 @@ userForm = new FormGroup({
   'resumetxt':new FormControl('',Validators.required),
   'subtitle':new FormControl('',Validators.required),
   'content':new FormControl('',Validators.required),
+  'content1':new FormControl('',Validators.required),
+  'content2':new FormControl('',Validators.required),
   'imgcontent':new FormControl('',Validators.required),
   'quote':new FormControl('',Validators.required)
 });
