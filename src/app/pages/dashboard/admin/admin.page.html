@@ -15,39 +15,47 @@
   Reduced Inequalised - Responsible Consumption And Production - Reduced Inequalised - Responsible Consumption And Production - No Poverty - Decent Work And Economic Growth - Reduced Inequalised - Responsible Consumption And Production - No Poverty - Decent Work And Economic Growth - Reduced Inequalised - Responsible Consumption And Production - 
 </p> -->
 
-<div class="container">
+<div class="container max-w-7xl mx-auto">
+  <div class="overflow-x-auto relative">
+    <div>
 
-  <table class="border-separate border border-slate-500 ...">
-    <thead>
+    <h1>Page#1</h1>
+  <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+    <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
       <tr>
-        <th class="border border-slate-600 ...">#</th>
-        <th class="border border-slate-600 ...">title</th>
-        <th class="border border-slate-600 ...">imghero</th>
-        <th class="border border-slate-600 ...">resumetxt</th>
-        <th class="border border-slate-600 ...">subtitle</th>
-        <th class="border border-slate-600 ...">content</th>
-        <th class="border border-slate-600 ...">imgcontent</th>
-        <th class="border border-slate-600 ...">quote</th>
-        <th class="border border-slate-600 ...">Edit</th>
+        <th scope="col" class="py-3 px-6">#</th>
+        <th scope="col" class="py-3 px-6">title</th>
+        <th scope="col" class="py-3 px-6">imghero</th>
+        <th scope="col" class="py-3 px-6">resumetxt</th>
+        <th scope="col" class="py-3 px-6">subtitle</th>
+        <th scope="col" class="py-3 px-6">content</th>
+        <th scope="col" class="py-3 px-6">content1</th>
+        <th scope="col" class="py-3 px-6">content2</th>
+        <th scope="col" class="py-3 px-6">imgcontent</th>
+        <th scope="col" class="py-3 px-6">quote</th>
+        <th scope="col" class="py-3 px-6">Edit</th>
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor = "let props of readData;">
-        <td class="border border-slate-700 ...">{{props.id}}</td>
-        <td class="border border-slate-700 ...">{{props.title}}</td>
-        <td class="border border-slate-700 ...">{{props.imghero}}</td>
-        <td class="border border-slate-700 ...">{{props.resumetxt}}</td>
-        <td class="border border-slate-700 ...">{{props.subtitle}}</td>
-        <td class="border border-slate-700 ...">{{props.content}}</td>
-        <td class="border border-slate-700 ...">{{props.imgcontent}}</td>
-        <td class="border border-slate-700 ...">{{props.quote}}</td>
+      <tr *ngFor = "let props of readData;" class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+        <td scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">{{props.id}}</td>
+        <td class="py-4 px-6">{{props.title}}</td>
+        <td class="py-4 px-6">{{props.imghero}}</td>
+        <td class="py-4 px-6">{{props.resumetxt}}</td>
+        <td class="py-4 px-6">{{props.subtitle}}</td>
+        <td class="py-4 px-6">{{props.content}}</td>
+        <td class="py-4 px-6">{{props.content1}}</td>
+        <td class="py-4 px-6">{{props.content2}}</td>
+        <td class="py-4 px-6">{{props.imgcontent}}</td>
+        <td class="py-4 px-6">{{props.quote}}</td>
         <td><ion-button class="" (click)="deleteID(props.id)">Delete</ion-button>
         <a [routerLink]="['../read/',props.id]" >Update</a>
         </td>
       </tr>
     </tbody>
   </table>
-
+</div>
+</div>
 </div>
 
 <router-outlet></router-outlet>
