@@ -48,13 +48,14 @@
           </div>
         </div>
 
-        <div class="container md:px-6 py-28 md:py-36 mx-auto grid md:grid-cols-2">
+        <div class="max-w-7xl container md:px-6 py-28 md:py-36 mx-auto grid md:grid-cols-2">
           <h2 class="text-2xl text-primary-fw capitalize md:text-3xl lg:text-5xl">
             <div class="flex">
               <span class="font-semibold w-96">{{props.subtitle}}</span>
             </div>
             
           </h2>
+
     
           <div class="grid grid-cols-1 mt-5">
             <div>
@@ -66,35 +67,51 @@
             </div>
     
             <p class="mt-4 text-md md:text-lg smallxl:text-xl">
-              {{primarytext.texttwo}}
+              {{props.content1}}
             </p>
     
     
             <p class="mt-4 text-md md:text-lg smallxl:text-xl">
-            {{primarytext.textthree}}
+              {{props.content2}}
             </p>
+          </div>
+          
+        </div>
+        <div >
+          <div class="max-w-7xl mx-auto">
+            <img src="./assets/img/poverty-img-1.png" class="text-center mt-20" />
           </div>
         </div>
 
+        <div class="w-3/3">
+          <div class="ml-16 mr-16 md:ml-28 md:mr-28">
+            <div class="max-w-7xl mx-auto">
+              <p
+                class="text-primary-fw text-md md:text-3xl max-w-7xl pt-32 sm:pt-36 md:pt-44 pb-20 md:pb-44"
+              >
+              {{props.quote}}
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <app-next-project [nextproject]="nextprojectdata"></app-next-project>
+        <app-secondary-footer></app-secondary-footer>
         
-      <div class="flex space-x-6 pb-20 text-secondary-fw">
-        <ion-icon class="w-6 h-6" name="logo-facebook"></ion-icon>
-        <ion-icon class="w-6 h-6" name="logo-twitter"></ion-icon>
-        <ion-icon class="w-6 h-6" name="logo-instagram"></ion-icon>
-        <ion-icon class="w-6 h-6" name="logo-linkedin"></ion-icon>
-        <button (click)="copyText(subhero.pagelink)"><ion-icon class="w-6 h-6" name="copy-outline"></ion-icon></button>
-      </div>
+
+        
+      
 
         
 
 
-        <span class="border border-slate-700 ...">{{props.resumetxt}}</span>
+        <!-- <span class="border border-slate-700 ...">{{props.resumetxt}}</span>
         <span class="border border-slate-700 ...">{{props.subtitle}}</span>
         <span class="border border-slate-700 ...">{{props.content}}</span>
+        <span class="border border-slate-700 ...">{{props.content1}}</span>
+        <span class="border border-slate-700 ...">{{props.content2}}</span>
         <span class="border border-slate-700 ...">{{props.imgcontent}}</span>
-        <span class="border border-slate-700 ...">{{props.quote}}</span>
-        <span>
-        </span>
+        <span class="border border-slate-700 ...">{{props.quote}}</span> -->
       </div>
     </div>
   </div>
