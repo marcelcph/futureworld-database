@@ -10,38 +10,37 @@
 </ion-button> -->
 
 
-<div class="container">
+<div class="">
 
-  <table class="border-separate border border-slate-500 ...">
-    <thead>
-      <tr>
-        <th class="border border-slate-600 ...">#</th>
-        <th class="border border-slate-600 ...">title</th>
-        <th class="border border-slate-600 ...">imghero</th>
-        <th class="border border-slate-600 ...">resumetxt</th>
-        <th class="border border-slate-600 ...">subtitle</th>
-        <th class="border border-slate-600 ...">content</th>
-        <th class="border border-slate-600 ...">imgcontent</th>
-        <th class="border border-slate-600 ...">quote</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor = "let props of readData;">
-        <td class="border border-slate-700 ...">{{props.id}}</td>
-        <td class="border border-slate-700 ...">{{props.title}}</td>
-        <td class="border border-slate-700 ...">{{props.imghero}}</td>
-        <td class="border border-slate-700 ...">{{props.resumetxt}}</td>
-        <td class="border border-slate-700 ...">{{props.subtitle}}</td>
-        <td class="border border-slate-700 ...">{{props.content}}</td>
-        <td class="border border-slate-700 ...">{{props.imgcontent}}</td>
-        <td class="border border-slate-700 ...">{{props.quote}}</td>
-        <td>
-        </td>
-      </tr>
-    </tbody>
-  </table>
+  <div class="text-center">
+    <div>
+      <div *ngFor = "let props of readData;">
+        <div class="ml-16 mr-16 md:ml-28 md:mr-28">
+          <h1
+            class="text-primary-fw text-2xl xsm:text-2xl sm:text-3xl md:text-4xl 2xl:text-6xl mx-auto max-w-7xl mt-36 sm:mt-36 md:mt-56"
+          >
+            {{props.title}}
+          </h1>
+        </div>
+
+        
+<div>
+  <ion-img class="w-full" src={{props.imghero}} alt="Alt description"></ion-img>
+</div>
+
+        <span class="border border-slate-700 ...">{{props.resumetxt}}</span>
+        <span class="border border-slate-700 ...">{{props.subtitle}}</span>
+        <span class="border border-slate-700 ...">{{props.content}}</span>
+        <span class="border border-slate-700 ...">{{props.imgcontent}}</span>
+        <span class="border border-slate-700 ...">{{props.quote}}</span>
+        <span>
+        </span>
+      </div>
+    </div>
+  </div>
 
 </div>
+
 
 <router-outlet></router-outlet>
 </div>
