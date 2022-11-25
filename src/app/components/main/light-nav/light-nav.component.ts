@@ -15,7 +15,7 @@ export class LightNavComponent implements OnInit {
   ngOnInit(): void {
     this.auth.isAuthenticated$.subscribe(isAuthenticated =>{
       if(isAuthenticated){
-        this.IonRouterOutlet.navigate(['/dashboard'])
+        this.IonRouterOutlet.navigate(['/dashboard/admin'])
       }
     })
   }
