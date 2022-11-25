@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ApiserviceService } from './apiservice.service';
 
 @Component({
   selector: 'app-dashboard',
@@ -7,9 +8,30 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashboardPage implements OnInit {
 
-  constructor() { }
+  constructor(private service:ApiserviceService) { }
 
-  ngOnInit() {
+  readData:any;
+
+  ngOnInit(): void {
+    this.getAllData();
+    }
+
+
+  // getdeleteid
+  deleteID(id:any)
+  {
+    console.log(id,'deleteID==>');
+    this.service.deleteData(id).subscribe((res)=>{
+        console.log(res,'deleteres==>');
+        this.getAllData();
+    });
   }
-
+// getData
+  getAllData()
+  {
+    this.service.getAllData().subscribe((res)=>{
+      console.log(res,"res==>");
+        this.readData = res.data;
+    });
+  }
 }
