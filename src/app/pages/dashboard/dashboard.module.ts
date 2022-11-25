@@ -13,7 +13,6 @@ import { ReadComponent } from './read/read.component';
 import { CreateComponent } from './create/create.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { TestComponent } from './test/test.component';
-import { LogoutLightComponent } from 'src/app/components/main/logout-light/logout-light.component';
 import { LightNavComponent } from 'src/app/components/main/light-nav/light-nav.component';
 import { DarkNavComponent } from 'src/app/components/main/dark-nav/dark-nav.component';
 import { NextProjectComponent } from 'src/app/components/goals/next-project/next-project.component';
@@ -30,7 +29,7 @@ import { SecondaryFooterComponent } from 'src/app/components/main/secondary-foot
   ],
   declarations: [DashboardPage,
     ReadComponent, CreateComponent,TestComponent,
-    DarkNavComponent, NextProjectComponent, SecondaryFooterComponent, LogoutLightComponent
+    DarkNavComponent, NextProjectComponent, SecondaryFooterComponent, 
   ]
 })
 export class DashboardPageModule {}
