@@ -1,7 +1,46 @@
 
+    <div class="max-w-7xl mx-auto">
+      <div class="mx-10 mt-10">
   <form [formGroup]="userForm">
 
-    <div>
+    
+
+  <div class="grid gap-6 mb-6 md:grid-cols-2">
+      <div>
+          <label for="title" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">title</label>
+          <input type="text" id="title" class="form-control bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" formControlName="title" placeholder="Enter title">
+      </div>
+      <div>
+          <label for="imghero" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">imghero</label>
+          <input type="text" id="imghero" class="form-control bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" formControlName="imghero" placeholder="Enter imghero">
+      </div>
+      <div>
+          <label for="resumetxt" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">resumetxt</label>
+          <input type="text" id="resumetxt" class="form-control bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" formControlName="resumetxt" placeholder="Enter resumetxt">
+      </div>  
+      <div>
+          <label for="subtitle" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">subtitle</label>
+          <input type="text" id="subtitle" class="form-control bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" formControlName="subtitle" placeholder="Enter subtitle">
+      </div>
+      <div>
+          <label for="content" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">content</label>
+          <input type="text" id="content" class="form-control bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" formControlName="content" placeholder="Enter content">
+      </div>
+      <div>
+          <label for="imgcontent" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">imgcontent</label>
+          <input type="text" id="imgcontent" class="form-control bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" formControlName="imgcontent" placeholder="Enter imgcontent">
+      </div>
+  </div>
+  <div class="mb-6">
+      <label for="quote" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">quote</label>
+      <input type="text" id="imgcontent" class="form-control bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" formControlName="quote" placeholder="Enter quote">
+  </div> 
+  
+
+
+
+
+    <!-- <div>
       <input type="text" class="form-control" formControlName="title" placeholder="Enter title">
     </div>
     
@@ -27,11 +66,11 @@
 
     <div>
       <input type="text" class="form-control" formControlName="quote" placeholder="Enter quote">
-    </div>
+    </div> -->
 
     
     <div>
-      <button *ngIf="!getparamid" (click)="userSubmit()">Create</button>
+      <button *ngIf="!getparamid" (click)="userSubmit()" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded float-right">Create</button>
     </div>
 
     <div>
@@ -39,3 +78,5 @@
     </div>
 
   </form>
+</div>
+</div>
