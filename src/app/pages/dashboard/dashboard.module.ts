@@ -14,6 +14,8 @@ import { CreateComponent } from './create/create.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { TestComponent } from './test/test.component';
 import { LogoutLightComponent } from 'src/app/components/main/logout-light/logout-light.component';
+import { LightNavComponent } from 'src/app/components/main/light-nav/light-nav.component';
+import { DarkNavComponent } from 'src/app/components/main/dark-nav/dark-nav.component';
 
 @NgModule({
   imports: [
@@ -26,7 +28,7 @@ import { LogoutLightComponent } from 'src/app/components/main/logout-light/logou
   ],
   declarations: [DashboardPage,
     ReadComponent, CreateComponent,TestComponent,
-    LogoutLightComponent
+    DarkNavComponent
   ]
 })
 export class DashboardPageModule {}
