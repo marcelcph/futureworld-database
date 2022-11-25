@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, NgModule } from '@angular/core';
 import { FormGroup} from '@angular/forms';
 import { FormControl, Validators } from '@angular/forms';
 import { ApiserviceService } from '../apiservice.service'
@@ -9,6 +9,7 @@ import { ActivatedRoute } from '@angular/router';
   templateUrl: './create.component.html',
   styleUrls: ['./create.component.scss'],
 })
+
 export class CreateComponent implements OnInit {
 
   constructor(private service:ApiserviceService, private router:ActivatedRoute) { }
