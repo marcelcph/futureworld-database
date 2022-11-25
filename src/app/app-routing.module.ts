@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { TestComponent } from './pages/dashboard/test/test.component';
 
 import { AuthGuard } from '@auth0/auth0-angular';
 
@@ -38,6 +39,7 @@ const routes: Routes = [
     canActivate: [AuthGuard],
     loadChildren: () => import('./pages/dashboard/dashboard.module').then( m => m.DashboardPageModule)
   },
+  {path:'test',component:TestComponent, pathMatch: 'full'},
 ];
 
 @NgModule({
