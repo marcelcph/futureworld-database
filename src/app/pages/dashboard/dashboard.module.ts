@@ -12,7 +12,7 @@ import {HttpClientModule} from '@angular/common/http';
 import { ReadComponent } from './read/read.component';
 import { CreateComponent } from './create/create.component';
 import { ReactiveFormsModule } from '@angular/forms';
-
+import { TestComponent } from './test/test.component';
 import { LogoutLightComponent } from 'src/app/components/main/logout-light/logout-light.component';
 
 @NgModule({
@@ -25,7 +25,7 @@ import { LogoutLightComponent } from 'src/app/components/main/logout-light/logou
     ReactiveFormsModule
   ],
   declarations: [DashboardPage,
-    ReadComponent, CreateComponent,
+    ReadComponent, CreateComponent,TestComponent,
     LogoutLightComponent
   ]
 })
