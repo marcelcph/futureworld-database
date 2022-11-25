@@ -16,6 +16,8 @@ import { TestComponent } from './test/test.component';
 import { LogoutLightComponent } from 'src/app/components/main/logout-light/logout-light.component';
 import { LightNavComponent } from 'src/app/components/main/light-nav/light-nav.component';
 import { DarkNavComponent } from 'src/app/components/main/dark-nav/dark-nav.component';
+import { NextProjectComponent } from 'src/app/components/goals/next-project/next-project.component';
+import { SecondaryFooterComponent } from 'src/app/components/main/secondary-footer/secondary-footer.component';
 
 @NgModule({
   imports: [
@@ -28,7 +30,7 @@ import { DarkNavComponent } from 'src/app/components/main/dark-nav/dark-nav.comp
   ],
   declarations: [DashboardPage,
     ReadComponent, CreateComponent,TestComponent,
-    DarkNavComponent
+    DarkNavComponent, NextProjectComponent, SecondaryFooterComponent
   ]
 })
 export class DashboardPageModule {}
