@@ -1,12 +1,13 @@
 <div class="scroll">
-    <div class="max-w-7xl mx-auto">
-      <div class="mx-10 mt-10">
-  <form [formGroup]="userForm">
-
-    
-
-  <div class="grid gap-6 mb-6 md:grid-cols-2">
-      <div>
+  <app-logout-light></app-logout-light>
+  <div class="max-w-7xl mx-auto">
+    <div class="mx-10 mt-32">
+      <form [formGroup]="userForm">
+        
+        
+        
+        <div class="grid gap-6 mb-6 md:grid-cols-2">
+          <div>
           <label for="title" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">title</label>
           <textarea type="text" id="title" class="form-control bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" formControlName="title" placeholder="Enter title"></textarea>
       </div>
