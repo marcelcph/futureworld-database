@@ -1,0 +1,54 @@
+<div class=" scroll">
+  <app-logout-light></app-logout-light>
+<h1>Skift indhold</h1>
+
+<ion-button href="dashboard/create">
+  Create
+</ion-button>
+<ion-button href="dashboard/read">
+  Read
+</ion-button>
+<!-- <p class="lg:text-8xl md:text-6xl sm:text-4xl text-3xl  font text-primary-fw -ml-16">
+  No Poverty - Decent Work And Economic Growth - Reduced Inequalised - Responsible Consumption And Production - No Poverty - Decent Work And Economic Growth - Reduced Inequalised - Responsible Consumption And Production - No Poverty - Decent Work And Economic Growth - Reduced Inequalised - Responsible Consumption And Production - 
+</p>
+<p class="lg:text-8xl md:text-6xl sm:text-4xl text-3xl font text-primary-fw -ml-96">
+  Reduced Inequalised - Responsible Consumption And Production - Reduced Inequalised - Responsible Consumption And Production - No Poverty - Decent Work And Economic Growth - Reduced Inequalised - Responsible Consumption And Production - No Poverty - Decent Work And Economic Growth - Reduced Inequalised - Responsible Consumption And Production - 
+</p> -->
+
+<div class="container">
+
+  <table class="border-separate border border-slate-500 ...">
+    <thead>
+      <tr>
+        <th class="border border-slate-600 ...">#</th>
+        <th class="border border-slate-600 ...">title</th>
+        <th class="border border-slate-600 ...">imghero</th>
+        <th class="border border-slate-600 ...">resumetxt</th>
+        <th class="border border-slate-600 ...">subtitle</th>
+        <th class="border border-slate-600 ...">content</th>
+        <th class="border border-slate-600 ...">imgcontent</th>
+        <th class="border border-slate-600 ...">quote</th>
+        <th class="border border-slate-600 ...">Edit</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor = "let props of readData;">
+        <td class="border border-slate-700 ...">{{props.id}}</td>
+        <td class="border border-slate-700 ...">{{props.title}}</td>
+        <td class="border border-slate-700 ...">{{props.imghero}}</td>
+        <td class="border border-slate-700 ...">{{props.resumetxt}}</td>
+        <td class="border border-slate-700 ...">{{props.subtitle}}</td>
+        <td class="border border-slate-700 ...">{{props.content}}</td>
+        <td class="border border-slate-700 ...">{{props.imgcontent}}</td>
+        <td class="border border-slate-700 ...">{{props.quote}}</td>
+        <td><ion-button class="" (click)="deleteID(props.id)">Delete</ion-button>
+        <a [routerLink]="['../read/',props.id]" >Update</a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+
+<router-outlet></router-outlet>
+</div>
