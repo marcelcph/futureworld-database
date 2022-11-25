@@ -81,11 +81,13 @@ app.post('/article',(req,res)=>{
     let resumetxt = req.body.resumetxt;
     let subtitle = req.body.subtitle;
     let content = req.body.content;
+    let content1 = req.body.content1;
+    let content2 = req.body.content2;
     let imgcontent = req.body.imgcontent;
     let quote = req.body.quote;
 
-    let qr = `insert into article(title,imghero,resumetxt,subtitle,content,imgcontent,quote)
-                values('${title}','${imghero}','${resumetxt}','${subtitle}','${content}','${imgcontent}','${quote}')`;
+    let qr = `insert into article(title,imghero,resumetxt,subtitle,content,content1,content2,imgcontent,quote)
+                values('${title}','${imghero}','${resumetxt}','${subtitle}','${content}','${content1}','${content2}','${imgcontent}','${quote}')`;
 
     db.query(qr,(err,result)=>{
         if(err){console.log(err);}
@@ -111,10 +113,12 @@ app.put('/article/:id',(req,res)=>{
     let resumetxt = req.body.resumetxt;
     let subtitle = req.body.subtitle;
     let content = req.body.content;
+    let content1 = req.body.content1;
+    let content2 = req.body.content2;
     let imgcontent = req.body.imgcontent;
     let quote = req.body.quote;
 
-    let qr = `update article set title = '${title}', imghero = '${imghero}', resumetxt = '${resumetxt}', subtitle = '${subtitle}', content = '${content}', imgcontent = '${imgcontent}', quote = '${quote}' 
+    let qr = `update article set title = '${title}', imghero = '${imghero}', resumetxt = '${resumetxt}', subtitle = '${subtitle}', content = '${content}', content1 = '${content1}', content2 = '${content2}', imgcontent = '${imgcontent}', quote = '${quote}' 
                where id = ${gID}`;
 
     db.query(qr,(err,result)=>{
