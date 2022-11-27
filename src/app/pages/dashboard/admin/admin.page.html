@@ -19,11 +19,9 @@
       <tr>
         <th class="border border-slate-700 ...">#</th>
         <th class="border border-slate-700 ...">title</th>
-        <th class="border border-slate-700 ...">imghero</th>
         <th class="border border-slate-700 ...">resumetxt</th>
         <th class="border border-slate-700 ...">subtitle</th>
         <th class="border border-slate-700 ...">content</th>
-        <th class="border border-slate-700 ...">imgcontent</th>
         <th class="border border-slate-700 ...">quote</th>
         <th class="border border-slate-700 ...">Edit</th>
       </tr>
@@ -32,11 +30,9 @@
       <tr *ngFor = "let props of readData;">
         <td class="border border-slate-700 ...">{{props.id}}</td>
         <td class="border border-slate-700 ...">{{props.title}}</td>
-        <td class="border border-slate-700 ...">{{props.imghero}}</td>
         <td class="border border-slate-700 ...">{{props.resumetxt}}</td>
         <td class="border border-slate-700 ...">{{props.subtitle}}</td>
         <td class="border border-slate-700 ...">{{props.content}}</td>
-        <td class="border border-slate-700 ...">{{props.imgcontent}}</td>
         <td class="border border-slate-700 ...">{{props.quote}}</td>
         <td class="border border-slate-700"><ion-button class="" (click)="deleteID(props.id)">Delete</ion-button>
         <a [routerLink]="['../read/',props.id]" >Update</a>
